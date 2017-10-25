@@ -40,4 +40,11 @@ public class EmployeeTest {
         assertEquals("Jo", employee.getName());
 
     }
+
+    @Test
+    public void cannotSetNameToEmptyString() {
+        employee.setName("");
+        assertEquals("Jo", employee.getName());
+
+    }
 }
